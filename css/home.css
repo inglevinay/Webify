@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+:root {
+    /* CSS HSL */
+    --mountbatten-pink: hsla(332 16% 52% 1);
+    --eton-blue: hsla(122, 21%, 68%, 1);
+    --pale-spring-bud: hsla(71, 29%, 77%, 1);
+    --melon: hsla(7, 87%, 83%, 1);
+    --light-coral: hsla(1, 78%, 69%, 1);
+
+        /* CSS HSL */
+    --y-in-mn-blue: hsla(213, 36%, 32%, 1);
+    --chinese-violet: hsla(276, 16%, 41%, 1);
+    --cinnamon-satin: hsla(347, 35%, 55%, 1);
+    --candy-pink: hsla(358, 70%, 66%, 1);
+    --tumbleweed: hsla(21, 69%, 73%, 1);
+}
+
+
+body {
+    background-color: var(--chinese-violet);
+    font-family: 'PT Sans Narrow';
+    font-size: x-large;
+
+    overflow-x: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: 'Righteous';
+    font-size: 50px;
+    text-align: center;
+    transition: transform 0.5s ease-out 100ms;
+}
+
+.logo-full {
+    font-family: 'PT Sans Narrow';
+    letter-spacing:1ch;
+}
+
+.navbar-brand {
+    padding-left: 5vw;
+    
+}
+
+#navbarNav {
+    font-size: x-large;
+    justify-content: right;
+    padding-right: 8vw;
+}
+
+.navbar-nav > * {
+    padding-left: 10vw;
+}
+
+.row {
+    padding-left: 10px;
+}
+
+.genre {
+    height: 100vh;
+    width: 20vw;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+
+    transition: transform 0.5s ease-out 100ms;
+}
+
+.genre p {
+    padding-top: 3vh;
+    padding-left: 3vh;
+
+    font-family: 'Righteous';
+    text-transform: uppercase;
+    font-size: x-large;
+    color: aliceblue;
+
+    /* letter-spacing: -0.4em; */
+    overflow: hidden;
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.genre1 {
+    background-color: rgb(38, 0, 165);
+    /* background-image: url("https://img.freepik.com/premium-photo/3d-illustration-halloween-concept-background-castle-graveyard-horror-background_685067-358.jpg?w=2000"); */
+}
+
+.genre2 {
+    background-color: rgb(17, 90, 153);
+    /* background-image: url("https://media.istockphoto.com/id/875970634/vector/romantic-film-glyphs-vector-icon.jpg?s=612x612&w=0&k=20&c=s5BrM29Vxgtc9FI3yxT56XCSsSzYq1U18uxTjnkZnc0="); */
+}
+
+.genre3 {
+    background-color: rgb(6, 17, 27);
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgN3BwZUKUNBKKDbIeSwvZr5aFHNetxLhLMHdpG5qqlnZ24xtGk2C9YLpWXXZHaZT-D9M&usqp=CAU"); */
+}
+
+.genre4 {
+    background-color: rgb(20, 203, 63);
+    /* background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/5G6WCFYU7NACZBZ3AHZ7ICQQFU.jpg"); */
+}
+
+.genre5 {
+    background-color: rgb(185, 64, 64);
+    /* background-image: url("https://cdn.thecoolist.com/wp-content/uploads/2016/08/Blackhawk-Down-best-action-movie-960x540.jpg"); */
+}
+
+footer {
+    padding: 1vw 10vw;
+}
+
+footer a {
+    padding-left: 5vw;
+    transition: all .2s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: none;
+
+}
+
+.genre:hover {
+    transform:scaleX(1.2) translateX(-1vw);
+    text-decoration-line: line-through;
+    text-decoration-color: white;
+}
+
+.genre1:hover{
+    transform: none;
+}
+
+.logo-text:hover {
+    color: var(--chinese-violet);
+}
+
