@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+:root {
+    /* CSS HSL */
+    --mountbatten-pink: hsla(332 16% 52% 1);
+    --eton-blue: hsla(122, 21%, 68%, 1);
+    --pale-spring-bud: hsla(71, 29%, 77%, 1);
+    --melon: hsla(7, 87%, 83%, 1);
+    --light-coral: hsla(1, 78%, 69%, 1);
+
+        /* CSS HSL */
+    --y-in-mn-blue: hsla(213, 36%, 32%, 1);
+    --chinese-violet: hsla(276, 16%, 41%, 1);
+    --cinnamon-satin: hsla(347, 35%, 55%, 1);
+    --candy-pink: hsla(358, 70%, 66%, 1);
+    --tumbleweed: hsla(21, 69%, 73%, 1);
+}
+
+
+body {
+    background-color: black;
+    font-family: 'PT Sans Narrow';
+    font-size: x-large;
+
+    overflow-x: hidden;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: 'Righteous';
+    font-size: 50px;
+    text-align: center;
+    transition: transform 0.5s ease-out 100ms;
+}
+
+.logo-full {
+    font-family: 'PT Sans Narrow';
+    letter-spacing:1ch;
+}
+
+.navbar-brand {
+    padding-left: 5vw;
+    
+}
+
+#navbarNav {
+    font-size: x-large;
+    justify-content: right;
+    padding-right: 8vw;
+}
+
+.navbar-nav > * {
+    padding-left: 10vw;
+}
+
+.movie-image {
+    height: 70vh;
+    border: 10px solid var(--pale-spring-bud);
+    /* border-radius: 25% 60% / 30%;
+    border-left: 20%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover; */
+}
+
+.logo-text:hover {
+    color: var(--chinese-violet);
+}
+
+#parallax {
+    position: relative;
+    width: 100%;
+    height:fit-content;
+    background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+  }
+
+.rank {
+    font-family: "Bungee Inline", "Unbounded";
+    font-size: 70px;
+    color:rgb(216, 255, 206);
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+a, p {
+    /* backdrop-filter: invert(); */
+    transition: all 1s;
+}
+
+.row p {
+    backdrop-filter: invert();
+}
+
+.container-fluid {
+    padding : 3% 15%;
+}
+
+.row {
+    padding-bottom: 10vh;
+}
+
+.row p {
+    padding: 5vw 2vw;
+}
+
+a h3 {
+    text-decoration: underline;
+    text-decoration-color: brown;
+}
+
