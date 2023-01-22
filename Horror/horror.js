@@ -13,7 +13,6 @@
         let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
         let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
         let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-        console.log(x);
         elem.style.backgroundPosition = x;
     }
 
@@ -21,7 +20,7 @@
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry)=>{
-        // console.log("entry")
+        console.log("entry");
         if(entry.isIntersecting) {
             entry.target.classList.add('show');
         }
@@ -32,4 +31,5 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll('.rank');
+hiddenElements.forEach((e1) => observer.observe(e1));
 
