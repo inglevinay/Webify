@@ -176,10 +176,34 @@ footer a:hover {
     transform:scaleX(1.2) translateX(-1vw);
     text-decoration-line: line-through;
     text-decoration-color: white;
+    background-size: cover;
+    /* transition: all .2s ease-in-out; */
 }
 
 .genre1:hover{
+    background-image: url("https://img.freepik.com/premium-photo/3d-illustration-halloween-concept-background-castle-graveyard-horror-background_685067-358.jpg?w=2000");
+    /* filter:sepia()  hue-rotate(134deg); */
     transform: none;
+}
+
+.genre2:hover{
+    background-image: url("https://wallpaperaccess.com/full/1652878.jpg");
+    /* filter:sepia()  hue-rotate(134deg); */
+}
+
+.genre3:hover{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgN3BwZUKUNBKKDbIeSwvZr5aFHNetxLhLMHdpG5qqlnZ24xtGk2C9YLpWXXZHaZT-D9M&usqp=CAU");
+    /* filter:sepia()  hue-rotate(134deg); */
+}
+
+.genre4:hover{
+    background-image: url("https://cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/5G6WCFYU7NACZBZ3AHZ7ICQQFU.jpg");
+    /* filter:sepia()  hue-rotate(134deg); */
+}
+
+.genre5:hover{
+    background-image: url("https://cdn.thecoolist.com/wp-content/uploads/2016/08/Blackhawk-Down-best-action-movie-960x540.jpg");
+    /* filter:sepia()  hue-rotate(134deg); */
 }
 
 .logo-text:hover {
